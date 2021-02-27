@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <title>ScoreKeeper</title>
+    <style>
+        .loser {
+            color: red
+        }
+
+        .winner {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="column is-half
+            is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1496224027003-38fc92be458c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Soccer Score Keeper</p>
+
+
+                                <b>
+                                    <h1 class=is-size-1><span id="pl1"> 0 </span> TO <span id="pl2">0</span></h1>
+                                </b>
+                                <label for="playto" class="label is-medium is-inline">Target Score</label>
+                                <div class="select is-rounded in-info">
+
+
+                                    <select class="is-rounded is-link select" name="" id="playto">
+
+
+                                        <option value="0">Select Number</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+
+                                    </select>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <button class="is-warning is-rounded button card-footer-item" id="pl1btn">Player One Score
+                            </button>
+                            <button class="is-info is-rounded button card-footer-item" id="pl2btn">Player Two
+                                Score</button>
+                            <button class="is-danger is-rounded button card-footer-item" id="reset">reset</button>
+                        </footer>
+
+
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
